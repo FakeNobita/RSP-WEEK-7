@@ -197,12 +197,12 @@
 const questions = [
   {
     "id": 1,
-    "question": "In Approximate Differential Privacy, what does represent? δ",
+    "question": "In Approximate Differential Privacy, what does δ represent?",
     "options": [
-      "The strict upper bound of the probability of the mechanism . 𝑀",
+      "The strict upper bound of the probability of the mechanism 𝑀.",
       "The estimated noise added to the Laplace Mechanism.",
-      "The average difference between all the data points in the datasets and . 𝑋 𝑋'",
-      "A leeway for small-probability events where -differential privacy may fail. ε"
+      "The average difference between all the data points in the datasets 𝑋 and 𝑋.  ",
+      "A leeway for small-probability events where ε-differential privacy may fail. "
     ],
     "correctAnswer": 3,
     "explanation": "Approximate Differential Privacy [6:50-9:26] - is a small leeway for low δ probability events where -differential privacy property may not hold true. ε",
@@ -225,9 +225,9 @@ const questions = [
     "id": 3,
     "question": "Which of the following are properties of Approximate Differential Privacy? (Select all that apply.)",
     "options": [
-      "It satisfies the property of post-processing, meaning any data-independent computation applied to the output will not make it less -differentially private. (ε, δ)",
-      "It guarantees privacy even when is significantly larger than (where is the δ 1/𝑛 𝑛 number of individuals in a dataset).",
-      "It satisfies composition, meaning if you have mechanisms that are all 𝑘 (ε, δ) -differentially private, then the combined mechanism is -differentially (𝑘ε, 𝑘δ) private.",
+      "It satisfies the property of post-processing, meaning any data-independent computation applied to the output will not make it less (ε, δ)-differentially private.",
+      "It guarantees privacy even when δ is significantly larger than 1/𝑛 (where is the 𝑛 number of individuals in a dataset).",
+      "It satisfies composition, meaning if you have mechanisms 𝑘 that are all (ε, δ)-differentially private, then the combined mechanism is (𝑘ε, 𝑘δ)-differentially private.",
       "It guarantees that the output distributions of the algorithm are completely identical for any two neighboring datasets."
     ],
     "correctAnswer": [
@@ -252,7 +252,7 @@ const questions = [
   },
   {
     "id": 5,
-    "question": "There are three buyers whose valuations are 15, 20, and 135, respectively. What is the absolute difference in revenue when the price of a digital good changes from 14 to 18? (Round your answer to the nearest whole number.) Answer (numerical): 6",
+    "question": "There are three buyers whose valuations are 15, 20, and 135, respectively. What is the absolute difference in revenue when the price of a digital good changes from 14 to 18? (Round your answer to the nearest whole number.)",
     "options": [],
     "correctAnswer": 6,
     "explanation": "Exponential Mechanism",
@@ -260,11 +260,11 @@ const questions = [
   },
   {
     "id": 6,
-    "question": "How does the Exponential Mechanism select a price ? ℎ ϵ 𝐻",
+    "question": "How does the Exponential Mechanism select a price ℎε𝐻?",
     "options": [
       "With probability proportional to the inverse of the price.",
-      "With probability proportional to . 𝑒 ε 2δ 𝑆(𝑥, ℎ)",
-      "With probability proportional to . 𝑒 δ 2ε 𝑆(𝑥, ℎ)",
+      "With probability proportional to 𝑒^((ε/2δ).𝑆(𝑥, ℎ)).",
+      "With probability proportional to 𝑒^((δ/2ε).𝑆(𝑥, ℎ)).",
       "Uniformly at random from all prices below the maximum valuation."
     ],
     "correctAnswer": 1,
@@ -275,8 +275,8 @@ const questions = [
     "id": 7,
     "question": "What privacy guarantee does the Exponential Mechanism provide for buyers' valuations?",
     "options": [
-      "-Differential Privacy (ε, δ)",
-      "-Differential Privacy ε",
+      "(ε, δ)-Differential Privacy",
+      "ε-Differential Privacy",
       "K-Anonymity",
       "Concentrated Differential Privacy"
     ],
@@ -299,7 +299,7 @@ const questions = [
   },
   {
     "id": 9,
-    "question": "In Statistical Parity, for a protected group and a classifier , what is the parity value for 𝐶 𝑀 an ideal classifier?",
+    "question": "In Statistical Parity, for a protected group C and a classifier M, what is the parity value for an ideal classifier?",
     "options": [
       "-1",
       "0",
@@ -342,7 +342,7 @@ const questions = [
   },
   {
     "id": 12,
-    "question": "The goal of Fair PCA is to find a PCA solution such that the reconstruction 𝑈= [𝑈𝐴, 𝑈𝐵] losses of groups A and B (where A is the protected group) are:",
+    "question": "The goal of Fair PCA is to find a PCA solution 𝑈= [𝑈𝐴, 𝑈𝐵] such that the reconstruction losses of groups A and B (where A is the protected group) are:",
     "options": [
       "Equal",
       "Unequal",
